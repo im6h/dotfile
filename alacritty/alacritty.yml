@@ -1,0 +1,32 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 135
+    lines: 45
+
+  padding:
+    x: 2
+    y: 2
+
+  dpi:
+    x: 100.0
+    y: 100.0
+draw_bold_text_with_bright_colors: true
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  bold:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  italic:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  size: 13.0
+  ligature: true
