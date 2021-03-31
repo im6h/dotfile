@@ -3,7 +3,6 @@ require("pluginsList.lua")
 require("web-devicons.lua")
 
 require("utils.lua")
-require("nvimTree.lua")
 require("bufferline.lua")
 require("statusline.lua")
 require("telescope-nvim.lua")
@@ -12,8 +11,6 @@ require("gitsigns.lua")
 require "colorizer".setup()
 
 -- lsp
-require("nvim-lspconfig.lua")
-require("nvim-compe.lua")
 
 local cmd = vim.cmd
 local g = vim.g
