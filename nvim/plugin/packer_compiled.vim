@@ -36,6 +36,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/base16-vim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/coc.nvim"
+  },
+  ["editorconfig-vim"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/editorconfig-vim"
+  },
+  fzf = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/fzf"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/fzf.vim"
+  },
   ["galaxyline.nvim"] = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
@@ -117,6 +133,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["typescript-vim"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/typescript-vim"
+  },
   ["vim-auto-save"] = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-auto-save"
@@ -125,9 +145,25 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-closetag"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-devicons"
+  },
+  ["vim-easymotion"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-easymotion"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-startify"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/im6h/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator"
   }
 }
 

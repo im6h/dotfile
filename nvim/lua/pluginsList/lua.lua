@@ -29,9 +29,13 @@ return require("packer").startup(
         use "nvim-lua/popup.nvim"
         use "karb94/neoscroll.nvim"
         use "editorconfig/editorconfig-vim"
+        use "mhinz/vim-startify"
         use "christoomey/vim-tmux-navigator"
         use {"junegunn/fzf", dir = "~/.fzf"}
         use "junegunn/fzf.vim"
         use {"neoclide/coc.nvim", branch = "release" }
+        use "tpope/vim-commentary"
+        use "leafgarland/typescript-vim"
+        use "easymotion/vim-easymotion"
     end
 )

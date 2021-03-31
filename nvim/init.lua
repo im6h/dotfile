@@ -56,9 +56,6 @@ cmd("hi TelescopePreviewBorder  guifg=#525865")
 cmd("hi PmenuSel  guibg=#98c379")
 
 -- tree folder name , icon color
-cmd("hi NvimTreeFolderIcon guifg = #61afef")
-cmd("hi NvimTreeFolderName guifg = #61afef")
-cmd("hi NvimTreeIndentMarker guifg=#545862")
 
 cmd("hi Normal guibg=NONE ctermbg=NONE")
 
@@ -69,15 +66,3 @@ require("lspkind").init(
     }
 )
 
--- nvimTree bg color
-cmd("hi CustomExplorerBg guibg=#242830")
-
-vim.api.nvim_exec(
-    [[
-augroup NvimTree 
-  au!
-  au FileType NvimTree setlocal winhighlight=Normal:CustomExplorerBg
- augroup END
- ]],
-    false
-)
