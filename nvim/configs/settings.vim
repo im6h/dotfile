@@ -34,7 +34,7 @@ set background=dark
 set ffs=unix,dos,mac
 syntax on
 syntax enable
-color base16-onedark
+color base16-nord
 highlight SpecialKey ctermfg=236
 highlight NonText ctermfg=236
 set clipboard^=unnamed,unnamedplus
@@ -45,7 +45,7 @@ hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
 hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
 
 lua <<EOF
-require'bufferline'.setup {
+require "bufferline".setup {
     options = {
         buffer_close_icon = "",
         modified_icon = "●",
