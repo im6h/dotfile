@@ -23,6 +23,10 @@ g.auto_save = 1
 cmd "colorscheme base16-onedark"
 cmd "syntax enable"
 cmd "syntax on"
+cmd "set list"
+cmd "set noswapfile"
+cmd "set listchars=eol:¬,tab:»·,trail:·"
+cmd "set ffs=unix,dos,mac"
 
 -- blankline
 

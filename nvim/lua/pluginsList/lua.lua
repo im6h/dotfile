@@ -37,5 +37,6 @@ return require("packer").startup(
         use "tpope/vim-commentary"
         use "leafgarland/typescript-vim"
         use "easymotion/vim-easymotion"
+        use "simeji/winresizer"
     end
 )
