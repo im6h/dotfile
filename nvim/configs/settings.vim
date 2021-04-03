@@ -95,15 +95,15 @@ require "bufferline".setup {
             guibg = "#3A3E44"
         }
     }
-}
+	}
 require('statusline.lua')
 require('web-devicons.lua')
 require "colorizer".setup()
 require('treesitter.lua')
 EOF
-" set relativenumber
-" :augroup numbertoggle
-" :  autocmd!
-" :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-" :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-" :augroup END
+set norelativenumber
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set norelativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set relativenumber
+:augroup END

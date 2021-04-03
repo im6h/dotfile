@@ -24,8 +24,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <silent>gb :BufferLinePick<CR>
-nnoremap <silent>[b :BufferLineCycleNext<CR>
-nnoremap <silent>b] :BufferLineCyclePrev<CR>
+nnoremap <silent>b] :BufferLineCycleNext<CR>
+nnoremap <silent>b[ :BufferLineCyclePrev<CR>
 
 "tabe: create new tab, tabn:next tab, tabp: previous tab
 map <leader>w <Plug>(easymotion-bd-w)

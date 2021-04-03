@@ -1,8 +1,6 @@
 call plug#begin('~/.config/nvim/bundle')
 	"" ui
-	" Plug 'itchyny/lightline.vim'
 	Plug 'simeji/winresizer'
-	Plug 'nathanaelkane/vim-indent-guides'
 	Plug 'mhinz/vim-startify'
 	Plug 'HerringtonDarkholme/yats.vim'
 	Plug 'chriskempson/base16-vim'
@@ -20,6 +18,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'akinsho/nvim-bufferline.lua'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'ruanyl/vim-sort-imports'
+	Plug 'lukas-reineke/indent-blankline.nvim'
 
 	"" format
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

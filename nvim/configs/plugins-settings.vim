@@ -6,12 +6,6 @@ let g:closetag_filetypes = 'html,js,xhtml,phtml,jsx,tsx,vue'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx,tsx,js,vue'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_shortcut = '>'
-let g:import_sort_auto = 1
-
-"  Lightline 
-" let g:lightline#bufferline#clickable=0
-" let g:lightline#bfferline#shorten_path=0
-" let g:lightline#bufferline#min_buffer_count=0
 
 "" FZF configs
 let g:fzf_action = {
@@ -40,13 +34,25 @@ let g:startify_lists = [
 \ { 'type': 'bookmarks', 'header': ['   Bookmarks']},
 \ ]
 
+" float term
 let g:floaterm_opener="edit"
-let g:indent_guides_enable_on_vim_startup = 0
+
+let g:indentLine_first_char='|'
+let g:indentLine_char='|'
+let g:indent_blankline_char='|'
+let g:indent_blankline_space_char=''
+
+" tmux naviator
 let g:tmux_navigator_save_on_switch = 2
 let g:tmux_navigator_no_mappings = 1
-let g:indentLine_color_term = 239
-let g:indentLine_char = 'c'
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_enabled = 1
+
+" tab nine
 let g:tablineclosebutton = 1
+
+" auto import 
+let g:import_sort_auto = 0
+
+" markdown
+let g:mkdp_auto_start = 0
+let g:mkdp_browser = 'firefox'
 
