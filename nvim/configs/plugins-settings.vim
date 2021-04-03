@@ -6,6 +6,7 @@ let g:closetag_filetypes = 'html,js,xhtml,phtml,jsx,tsx,vue'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx,tsx,js,vue'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_shortcut = '>'
+let g:import_sort_auto = 1
 
 "  Lightline 
 " let g:lightline#bufferline#clickable=0

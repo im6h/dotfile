@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'kyazdani42/nvim-web-devicons' 
 	Plug 'akinsho/nvim-bufferline.lua'
 	Plug 'ryanoasis/vim-devicons'
+	Plug 'ruanyl/vim-sort-imports'
 
 	"" format
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
