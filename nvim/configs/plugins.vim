@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'ruanyl/vim-sort-imports'
 	Plug 'lukas-reineke/indent-blankline.nvim'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 	"" format
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

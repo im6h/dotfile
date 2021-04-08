@@ -101,9 +101,9 @@ require('web-devicons.lua')
 require "colorizer".setup()
 require('treesitter.lua')
 EOF
-set norelativenumber
-:augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set norelativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set relativenumber
-:augroup END
+" set norelativenumber
+" :augroup numbertoggle
+" :  autocmd!
+" :  autocmd BufEnter,FocusGained,InsertLeave * set norelativenumber
+" :  autocmd BufLeave,FocusLost,InsertEnter   * set relativenumber
+" :augroup END
