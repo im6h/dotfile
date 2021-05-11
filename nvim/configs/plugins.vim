@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'rbgrouleff/bclose.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'glepnir/galaxyline.nvim'
-  Plug 'norcalli/nvim-colorizer.lua'
+  	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
@@ -34,7 +34,6 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'junegunn/fzf.vim'
 
 	"" tool
-	Plug 'wakatime/vim-wakatime'
 	Plug 'easymotion/vim-easymotion'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
