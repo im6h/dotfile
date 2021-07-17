@@ -1,41 +1,23 @@
 call plug#begin('~/.config/nvim/bundle')
-	"" ui
-	Plug 'simeji/winresizer'
-	Plug 'mhinz/vim-startify'
-	Plug 'HerringtonDarkholme/yats.vim'
-	Plug 'chriskempson/base16-vim'
-	Plug 'voldikss/vim-floaterm'
-	Plug 'iberianpig/ranger-explorer.vim'
-	Plug 'rbgrouleff/bclose.vim'
-	Plug 'Yggdroot/indentLine'
-	Plug 'glepnir/galaxyline.nvim'
-  	Plug 'norcalli/nvim-colorizer.lua'
-	Plug 'nvim-lua/popup.nvim'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'psliwka/vim-smoothie'
-	Plug 'kyazdani42/nvim-web-devicons' 
-	Plug 'akinsho/nvim-bufferline.lua'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'ruanyl/vim-sort-imports'
-	Plug 'lukas-reineke/indent-blankline.nvim'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-
-	"" format
-	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'alvan/vim-closetag'
-	Plug 'tpope/vim-commentary'
-	Plug 'raimondi/delimitmate'
-	Plug 'leafgarland/typescript-vim'
-
-	"" search
-	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-	Plug 'junegunn/fzf.vim'
-
-	"" tool
-	Plug 'easymotion/vim-easymotion'
-	Plug 'editorconfig/editorconfig-vim'
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	Plug 'christoomey/vim-tmux-navigator'
+  Plug 'chriskempson/base16-vim'
+  Plug 'Yggdroot/indentLine'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'tpope/vim-commentary'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'akinsho/nvim-bufferline.lua'
+  Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'psliwka/vim-smoothie'
+  Plug 'ful1e5/onedark.nvim'
+  Plug 'simeji/winresizer'
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/completion-nvim'
+  Plug 'folke/trouble.nvim'
 call plug#end()
