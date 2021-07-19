@@ -1,5 +1,4 @@
 call plug#begin('~/.config/nvim/bundle')
-  Plug 'chriskempson/base16-vim'
   Plug 'Yggdroot/indentLine'
   Plug 'ryanoasis/vim-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
@@ -15,9 +14,10 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'psliwka/vim-smoothie'
-  Plug 'ful1e5/onedark.nvim'
   Plug 'simeji/winresizer'
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/completion-nvim'
   Plug 'folke/trouble.nvim'
+  Plug 'eddyekofo94/gruvbox-flat.nvim'
+  Plug 'mhartington/formatter.nvim'
 call plug#end()

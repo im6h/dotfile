@@ -29,7 +29,7 @@ set hidden
 set list
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
-set termguicolors
+"set termguicolors
 set background=dark
 set ffs=unix,dos,mac
 syntax on
@@ -38,6 +38,7 @@ highlight SpecialKey ctermfg=236
 highlight NonText ctermfg=236
 set clipboard^=unnamed,unnamedplus
 let base16colorspace=256
+colorscheme gruvbox-flat
 
 hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
@@ -53,3 +54,9 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif

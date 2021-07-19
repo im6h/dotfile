@@ -7,6 +7,8 @@ func add(x int) int {
 }
 
 func main() {
-	fmt.Print("Hello Go ")
+	fmt.Print("Hello Go")
 	fmt.Print(add(1))
 }
+
+

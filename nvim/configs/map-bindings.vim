@@ -10,7 +10,7 @@ nnoremap <C-a> ggVG
 nnoremap <leader>ff <cmd>:FZF<CR>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-imap jj <Esc>
+imap hh <Esc>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
