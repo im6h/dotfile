@@ -20,4 +20,5 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'folke/trouble.nvim'
   Plug 'eddyekofo94/gruvbox-flat.nvim'
   Plug 'mhartington/formatter.nvim'
+  Plug 'projekt0n/github-nvim-theme'
 call plug#end()
