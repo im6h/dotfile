@@ -18,24 +18,3 @@ get_platform() {
   esac
   echo $platform
 }
-
-heading "installing packer"
-
-if [[ ! -e ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]]; then
-  heading "Installing packer"
-  git clone https://github.com/wbthomason/packer.nvim\
-    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-fi
-
-heading "Linking config"
-heading "old nvim config will be deleted so watchout :0"
-
-
-rm -rf ~/.config/nvim/ 
-cp -R nvim ~/.config/ 
-
-echo "Copy done"
-
-
-
-
