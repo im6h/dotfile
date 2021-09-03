@@ -19,8 +19,8 @@ I posted EFI folder for hackintosh with Opencore in device hardware:
 - Bluetooth work.
 - Battery work.
 - Fan work.
+- Sleep mode work but when close the screen.
 
 ### Issue
 
-- Sleep mode doesn't working.
 - IService doesn't working.
