@@ -21,7 +21,6 @@ set nobackup
 set nowritebackup
 set nowrap
 set pumheight=10
-set t_Co=16
 set laststatus=2
 set backupcopy=yes
 set ignorecase
@@ -29,7 +28,6 @@ set hidden
 set list
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
-"set termguicolors
 set background=dark
 set ffs=unix,dos,mac
 syntax on
@@ -37,8 +35,7 @@ syntax enable
 highlight SpecialKey ctermfg=236
 highlight NonText ctermfg=236
 set clipboard^=unnamed,unnamedplus
-let base16colorspace=256
-colorscheme gruvbox-flat
+colorscheme github 
 
 hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
@@ -55,8 +52,11 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 
+set t_Co=256
+let &t_ut=''
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+

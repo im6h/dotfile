@@ -7,7 +7,7 @@ let g:fzf_layout = { 'down': '40%' }
 let g:floaterm_opener="edit"
 let g:indentLine_char = '▏'
 
-let g:gruvbox_italic_functions = 1
-let g:gruvbox_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
-let g:gruvbox_flat_style = "hard"
-
+nmap <silent> gd :vsp<CR><Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

@@ -80,7 +80,7 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-nnoremap <C-t> :NvimTreeToggle<CR>
+nnoremap <leader>t :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 

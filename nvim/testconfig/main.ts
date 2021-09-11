@@ -1,11 +1,11 @@
-import { bar } from './bar';
+import { bar } from "./bar";
 
 export function main(a: number) {
   return a + 1;
 }
 
 export function hello() {
-  console.log('Hello world');
+  console.log("Hello world");
 }
 
 export type User = {
@@ -14,7 +14,7 @@ export type User = {
 };
 
 const u: User = {
-  name: 'Vu Hai Dang',
+  name: "Vu Hai Dang",
   age: 24,
 };
 console.info(u);
