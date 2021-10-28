@@ -7,7 +7,7 @@ set mouse=a
 set incsearch
 set hlsearch
 set number relativenumber
-set tabstop=4
+set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 set splitbelow
@@ -25,9 +25,9 @@ set laststatus=2
 set backupcopy=yes
 set ignorecase
 set hidden
-set list
-set showbreak=↪\ 
-set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+" set list
+" set showbreak=↪\ 
+" set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set background=dark
 set ffs=unix,dos,mac
 syntax on
@@ -35,7 +35,7 @@ syntax enable
 highlight SpecialKey ctermfg=236
 highlight NonText ctermfg=236
 set clipboard^=unnamed,unnamedplus
-colorscheme github 
+colorscheme onedark 
 
 hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE

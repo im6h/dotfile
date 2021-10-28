@@ -15,12 +15,9 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'psliwka/vim-smoothie'
   Plug 'simeji/winresizer'
-  " Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/completion-nvim'
   Plug 'projekt0n/github-nvim-theme'
+	Plug 'navarasu/onedark.nvim'
   Plug 'folke/trouble.nvim'
   Plug 'mhartington/formatter.nvim'
-  " Plug 'sainnhe/gruvbox-material'
-  " Plug 'eddyekofo94/gruvbox-flat.nvim'
-  " Plug 'creativenull/diagnosticls-configs-nvim'
 call plug#end()
