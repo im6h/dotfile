@@ -14,8 +14,9 @@ I posted EFI folder for hackintosh with Opencore in device hardware:
 ### Work
 
 - Touchpad work with 2,3 finger.
-- Wireless support.
-- Sound card, microphone wor.
+- Wireless work.
+- Sound card, microphone work
+- Ethernet work
 - Bluetooth work.
 - Battery work.
 - Fan work.
