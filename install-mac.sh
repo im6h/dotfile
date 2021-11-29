@@ -88,10 +88,6 @@ function install_node {
     fi
 }
 
-function link_dotfiles {
-
-}
-
 while test $# -gt 0; do
     case "$1" in
     --install)

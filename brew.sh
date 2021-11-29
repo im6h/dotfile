@@ -14,7 +14,7 @@ brew install carlocab/personal/unrar
 brew install go
 brew install neofetch
 
-# some package will not work in homebrew
+# some package will not work in homebrew in ubuntu
 brew install google-chrome
 brew install kitty
 brew info --cask openkey
