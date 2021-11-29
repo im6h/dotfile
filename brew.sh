@@ -24,12 +24,10 @@ brew install --cask docker
 brew install go
 brew install neofetch
 
-
 # unrar
 brew install carlocab/personal/unrar
 
 brew install --cask dbeaver-community
-
 
 # Remove outdated versions from the cellar.
 brew cleanup
