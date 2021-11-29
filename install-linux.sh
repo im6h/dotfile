@@ -30,12 +30,17 @@ function install_linux {
         apt-get install git -y
     fi
 
-    if [ "$(is_installed nvim)" == "0" ]; then
-        echo "================> Installing nvim <================"
-        apt-get install python3-neovim -y
-    fi
-
     zsh
+}
+
+function install_brew {
+    echo "================> Installing zsh homebrew <================"
+
+    if [ "$(is_installed brew)" == "0" ]; then
+        apt-get install build-essential -y
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 }
 
 function zsh_config {
@@ -72,7 +77,7 @@ function init_config {
         cp -r $(pwd)/kitty $XDG_CONFIG_HOME
     fi
 
-    cat $(pwd)/env.txt >> $HOME/.zshrc
+    cat $(pwd)/env.txt >>$HOME/.zshrc
 }
 
 function install_node {
@@ -104,6 +109,10 @@ while test $# -gt 0; do
         ;;
     --zsh)
         zsh_config
+        exit
+        ;;
+    --homebrew)
+        install_brew
         exit
         ;;
     --node)
