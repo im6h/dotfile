@@ -25,6 +25,7 @@ set laststatus=2
 set backupcopy=yes
 set ignorecase
 set hidden
+set nospell 
 " set list
 " set showbreak=↪\ 
 " set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
@@ -35,7 +36,7 @@ syntax enable
 highlight SpecialKey ctermfg=236
 highlight NonText ctermfg=236
 set clipboard^=unnamed,unnamedplus
-colorscheme onedark 
+colorscheme gruvbox 
 
 hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE

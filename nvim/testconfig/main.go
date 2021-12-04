@@ -2,13 +2,11 @@ package main
 
 import "fmt"
 
-func add(x int) int {
+func add(x int16) int16 {
 	return x + 1
 }
 
 func main() {
-	fmt.Print("Hello Go")
-	fmt.Print(add(1))
+	fmt.Println("Hello Go")
+	fmt.Println(add(1))
 }
-
-

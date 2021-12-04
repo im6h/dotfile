@@ -13,15 +13,19 @@
   ],
   "diagnostic.virtualTextCurrentLineOnly": true,
   "codeLens.enable": true,
+
+  "eslint.autoFixOnSave": true,
+  "eslint.format.enable": true,
+
   "diagnostic.virtualText": true,
-  "tsserver.enableJavascript": true,
-  "tsserver.enable": true,
   "languageserver": {
-    "go": {
+    "golang": {
       "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"]
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
     },
     "dockerfile": {
       "command": "docker-langserver",
@@ -43,5 +47,40 @@
       "filetypes": ["terraform"],
       "initializationOptions": {}
     }
-  }
+  },
+
+  "suggest.completionItemKindLabels": {
+    "variable": "\uf71b",
+    "constant": "\uf8ff",
+    "struct": "\ufb44",
+    "class": "\uf0e8",
+    "interface": "\ufa52",
+    "text": "\ue612",
+    "enum": "\uf435",
+    "enumMember": "\uf02b",
+    "color": "\ue22b",
+    "property": "\ufab6",
+    "field": "\uf93d",
+    "unit": "\uf475",
+    "file": "\uf471",
+    "value": "\uf8a3",
+    "event": "\ufacd",
+    "folder": "\uf115",
+    "keyword": "\uf893",
+    "snippet": "\uf64d",
+    "operator": "\uf915",
+    "reference": "\uf87a",
+    "typeParameter": "\uf278",
+    "default": "\uf29c"
+  },
+
+  "explorer.position": "left",
+  "explorer.icon.source": "nvim-web-devicons",
+  "explorer.icon.enableNerdfont": true,
+
+  "sql.lintOnSave": true,
+  "sql.lintOnOpen": true,
+
+  "tsserver.enableJavascript": true,
+  "tsserver.enable": true
 }

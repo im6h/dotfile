@@ -2,5 +2,5 @@ lua << EOF
 require("bufferline").setup{}
 EOF
 
-nnoremap <leader>b :BufferLineCycleNext<CR>
-nnoremap <leader>B :BufferLineCyclePrev<CR>
+nnoremap gt :BufferLineCycleNext<CR>
+nnoremap gT :BufferLineCyclePrev<CR>

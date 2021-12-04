@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/bundle')
   Plug 'Yggdroot/indentLine'
-  Plug 'kyazdani42/nvim-tree.lua'
+  " Plug 'kyazdani42/nvim-tree.lua'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'tpope/vim-commentary'
   Plug 'jiangmiao/auto-pairs'
@@ -16,8 +16,13 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'psliwka/vim-smoothie'
   Plug 'simeji/winresizer'
   Plug 'nvim-lua/completion-nvim'
-  Plug 'projekt0n/github-nvim-theme'
-	Plug 'navarasu/onedark.nvim'
   Plug 'folke/trouble.nvim'
   Plug 'mhartington/formatter.nvim'
+
+  Plug 'projekt0n/github-nvim-theme'
+	Plug 'navarasu/onedark.nvim'
+	Plug 'EdenEast/nightfox.nvim'
+	Plug 'jacoborus/tender.vim'
+	Plug 'editorconfig/editorconfig-vim'
+	Plug 'morhetz/gruvbox'
 call plug#end()

@@ -1,4 +1,4 @@
 lua << EOF
-require("onedark").setup({
+require("nightfox").setup({
 })
 EOF

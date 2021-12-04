@@ -1,6 +1,6 @@
-import { foo } from './foo'
+import { foo } from "./foo";
 
 export function bar() {
-	console.log('run from bar')
-	foo()
+  console.log("run from bar");
+  foo();
 }
