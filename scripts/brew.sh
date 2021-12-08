@@ -19,6 +19,7 @@ function run_on_macos {
     brew install openjdk@8
     brew install --cask docker
     brew install --cask dbeaver-community
+		brew install --cask iterm2
 
 }
 

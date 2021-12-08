@@ -77,7 +77,7 @@ function init_config {
         cp -r $(pwd)/kitty $XDG_CONFIG_HOME
     fi
 
-    cat $(pwd)/env.txt >>$HOME/.zshrc
+    cat $(pwd)/env.txt >> $HOME/.zshrc
 }
 
 function install_node {
