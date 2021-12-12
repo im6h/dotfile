@@ -7,16 +7,4 @@ map q :q<CR>
 map <C-s> :w <CR>
 
 nnoremap <C-a> ggVG
-nnoremap <leader>ff <cmd>:FZF<CR>
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-imap hh <Esc>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg . " " . expand('<cword>')
-  endif
-endfunction
+nnoremap <leader>p <cmd>:FZF<CR>

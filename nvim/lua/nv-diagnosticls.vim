@@ -1,5 +1,4 @@
 lua << EOF
-
 EOF
 
 " local dlsconfig = require 'diagnosticls-configs'
