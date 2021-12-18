@@ -20,6 +20,8 @@ function run_on_macos {
     brew install --cask docker
     brew install --cask dbeaver-community
 		brew install --cask iterm2
+		brew install hyperkit
+		brew install minikube
 
 }
 
