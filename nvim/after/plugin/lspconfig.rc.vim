@@ -97,6 +97,21 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.gopls.setup { 
+ -- cmd = {"gopls", "serve"},
+ -- settings = {
+ --   gopls = {
+ --     analyses = {
+ --       unusedparams = true,
+ --     },
+ --     staticcheck = true,
+ --   },
+ -- },
+}
+
+nvim_lsp.dockerls.setup {
+}
+
 nvim_lsp.diagnosticls.setup {
   filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
   init_options = {
@@ -138,7 +153,7 @@ nvim_lsp.diagnosticls.setup {
       prettier = {
         command = 'prettier_d_slim',
         rootPatterns = { '.git' },
-        -- requiredFiles: { 'prettier.config.js' },
+        requiredFiles = { 'prettier.*', '.prettier.*' },
         args = { '--stdin', '--stdin-filepath', '%filename' }
       }
     },

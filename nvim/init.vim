@@ -99,6 +99,8 @@ set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
+autocmd FileType py setlocal shiftwidth=4 tabstop=4
 
 runtime ./plug.vim
 if has("unix")

@@ -28,6 +28,7 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   Plug 'sainnhe/gruvbox-material'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
