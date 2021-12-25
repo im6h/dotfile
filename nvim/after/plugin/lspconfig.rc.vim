@@ -97,20 +97,34 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.bashls.setup {
+  cmd = { "bash-language-server", "start" },
+  cmd_env = {
+    GLOB_PATTERN = "*@(.sh|.inc|.bash|.command)"
+  },
+  filetypes = { "sh" },
+  single_file_support = true
+}
+
 nvim_lsp.gopls.setup { 
- -- cmd = {"gopls", "serve"},
- -- settings = {
- --   gopls = {
- --     analyses = {
- --       unusedparams = true,
- --     },
- --     staticcheck = true,
- --   },
- -- },
 }
 
 nvim_lsp.dockerls.setup {
 }
+
+nvim_lsp.yamlls.setup {
+  cmd = { "yaml-language-server", "--stdio" },
+  filetypes = { "yaml", "yml" },
+  settings = {
+    redhat = {
+      telemetry = {
+        enabled = false
+      }
+    }
+  },
+  single_file_support = true
+}
+
 
 nvim_lsp.diagnosticls.setup {
   filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
@@ -148,7 +162,7 @@ nvim_lsp.diagnosticls.setup {
         command = 'eslint_d',
         rootPatterns = { '.git' },
         args = { '--stdin', '--stdin-filename', '%filename', '--fix-to-stdout' },
-        rootPatterns = { '.git' },
+        requiredFiles = { 'eslint.*', '.eslint.*' },
       },
       prettier = {
         command = 'prettier_d_slim',
@@ -194,5 +208,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     update_in_insert = false,
   }
 )
+
+
 EOF
+
 

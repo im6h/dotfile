@@ -8,7 +8,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
 if has("nvim")
-  Plug 'hoob3rt/lualine.nvim'
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -29,10 +28,13 @@ if has("nvim")
   Plug 'sainnhe/gruvbox-material'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
